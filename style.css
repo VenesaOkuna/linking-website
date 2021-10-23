@@ -1,3 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: cover;
+    height: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+
 .header{
     background-color: transparent;
 }
@@ -16,8 +31,8 @@
     text-decoration: none;
     text-transform: none;
     color: #303031;
-    font-size: 13px;
-    font-family: 'Urbanist', sans-serif;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
     letter-spacing: 2px;
     font-weight: 600;
     padding: 25px;
@@ -25,9 +40,104 @@
 }
 
 .header ul li a:hover{
-    background-color: rgb(254,233,122);
+    background-color: #f8d6db;
    
 }
 span {
     color: #71a894;
+}
+
+.intro h1{
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2px;
+    line-height: 70px;
+    font-size: 52px;
+    color: #303031;
+    border: none;
+    padding: 2%;
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    
+}
+
+.intro h2{
+    font-family: 'Inter', sans-serif;
+    color: #303031;
+    font-size: medium;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+.intro h4{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #303031;
+    border: none;
+    padding: 2%;
+    width: 45%;
+    position: absolute;
+    top: 65%;
+    left: 6%;
+}
+
+.intro button{
+    background-color: #f26a7e;
+    position: absolute;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 7%;
+    left: 8%;
+
+}
+
+.pic1{
+    position: absolute;
+    top: 20%;
+    right: 6%;
+    width: auto;
+}
+
+.pic2{
+    position: absolute;
+    right: 3%;
+    width: auto;
+}
+
+
+.whyus h1{
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2px;
+    font-size: 42px;
+
+    color: #303031;
+    border: none;
+    padding: 2%;
+    position: absolute;
+    top: 115%;
+    left: 20%;
+    
+   
+}
+
+.whyus h4{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: #303031;
+    border: none;
+    padding: 2%;
+    width: 90%;
+    position: absolute;
+    top: 135%;
+    left: 3%;
 }
