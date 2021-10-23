@@ -1,0 +1,33 @@
+.header{
+    background-color: transparent;
+}
+
+.header ul{
+    text-align: right;
+}
+
+.header ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.header ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: none;
+    color: #303031;
+    font-size: 13px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 25px;
+    transition: all ease 0.5s;
+}
+
+.header ul li a:hover{
+    background-color: rgb(254,233,122);
+   
+}
+span {
+    color: #71a894;
+}
