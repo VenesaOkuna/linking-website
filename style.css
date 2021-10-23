@@ -11,10 +11,12 @@ body{
     overflow-x: hidden;
 }
 
-
-
-.header{
-    background-color: transparent;
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header ul{
@@ -31,14 +33,36 @@ body{
     text-decoration: none;
     text-transform: none;
     color: #303031;
-    font-size: 12px;
-    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-family: ;
     letter-spacing: 2px;
     font-weight: 600;
-    padding: 25px;
+    padding: 0px;
     transition: all ease 0.5s;
 }
+.header ul{
+    text-align: right;
+    position: absolute;
+    top: 3%;
+}
 
+.header ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.header ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: none;
+    color: #303031;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 20px;
+    transition: all ease 0.5s;
+}
 .header ul li a:hover{
     background-color: #f8d6db;
    
@@ -95,6 +119,7 @@ span {
     border-radius: 5px;
     bottom: 7%;
     left: 8%;
+    padding-bottom: 20px;
 
 }
 
@@ -107,6 +132,7 @@ span {
 
 .pic2{
     position: absolute;
+    top: 20%;
     right: 3%;
     width: auto;
 }
@@ -127,8 +153,10 @@ span {
    
 }
 
+
 .whyus h4{
     font-family: 'Montserrat', sans-serif;
+    font-weight:600 ;
     letter-spacing: 2px;
     text-align: center;
     line-height: 30px;
@@ -140,4 +168,58 @@ span {
     position: absolute;
     top: 135%;
     left: 3%;
+}
+
+#landingpage{
+    margin-bottom: 25px;
+}
+
+.scrolldown{
+    height: 50px;
+    width: 30px;
+    /* border: 2px solid black; */
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scrolldown::before,
+.scrolldown::after{
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    border: 2px solid black;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%,-100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scrolldown 1s ease-in-out infinite;
+}
+
+.scrolldown::after{
+    top: 30%;
+    animation-delay: .3s;
+}
+
+@keyframes scrolldown{
+    0%{
+        opacity: 0;
+    }
+
+    30%{
+        opacity: 1;
+    }
+
+    60%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
 }
