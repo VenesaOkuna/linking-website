@@ -89,11 +89,11 @@ span {
 .intro h2{
     font-family: 'Inter', sans-serif;
     color: #303031;
-    font-size: medium;
+    font-size: extra x-large;
     letter-spacing: 2px;
     position: absolute;
-    top: 3%;
-    left: 3%;
+    top: 6%;
+    left: 10%;
 }
 
 .intro h4{
@@ -254,4 +254,186 @@ span {
     padding: 0px;
     font-size: 30px;
     justify-content: space-evenly;
+  }
+
+  .authentic{
+      position: absolute;
+  }
+
+  .authenticity{
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2px;
+    font-size: 42px;
+    position: absolute;
+    color: #303031;
+    border: none;
+    padding: 2%;
+    position: absolute;
+    top: 275%;
+    transform: translateX(-50%);
+  }
+
+  .reviews{
+    
+        display: flex;
+        background-color: transparent;
+      }
+
+ .reviews h1{
+
+      display: flex;
+      font-family: 'Carter One', cursive;
+      letter-spacing: 2px;
+      font-size: 42px;
+      position: absolute;
+      color: #303031;
+      background-color: transparent;
+      top:880%;
+      left: 150%;
+      margin: 1%;
+      padding: 0px;
+      font-size: 30px;
+      justify-content: space-evenly;
+  
+ }
+
+.authenticity{
+    display: flex;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2px;
+    font-size: 42px;
+    position: absolute;
+    color: #303031;
+    background-color: transparent;
+    top: 480%;
+    margin: 1%;
+    padding: 0px;
+    font-size: 30px;
+    justify-content: space-evenly;
+}
+
+.reviewstext
+    {
+        font-family: 'Montserrat', sans-serif;
+        font-weight:600 ;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+        color: #303031;
+        border: none;
+        padding: 2%;
+        width: 90%;
+        position: absolute;
+        top: 835%;
+        left: 3%;
+    }
+
+.pink{
+    color: #f26a7e;
+}
+  
+
+
+.login{
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    color: #303031;
+    font-size: 15px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 6.3%;
+    right: 10%;
+}
+
+.newuser{
+    text-decoration: none;
+    color: #71a894;
+}
+
+.loginart{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+}
+
+.loginform{
+width: 40%;
+position: absolute;
+top: 26%;
+right: 10%;
+}
+
+/* Bordered form */
+form {
+    border: none;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #71a894;
+    box-sizing: border-box;
+    font-weight: 300;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #f26a7e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
   }
