@@ -15,12 +15,71 @@ section{
     min-height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+footer h4{
+  display: block;
+  text-decoration: none;
+  text-transform: none;
+  color: #303031;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 20px;
+  transition: all ease 0.5s;
+
+  position: absolute;
+  bottom: 0%;
+  left: 2%;
+}
+
+.logo:hover{
+  opacity: 0.6;
+}
+
+footer a:hover{
+  opacity: 0.6;
+}
+
+footer ul{
+  position: absolute;
+  bottom: 0%;
+  right: 2%;
+  text-align: right;
+  align-items: right;
+}
+
+footer ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+footer ul li a{
+  display: block;
+  text-decoration: none;
+  text-transform: none;
+  color: #303031;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 20px;
+  margin-top: 10%;
+  transition: all ease 0.5s;
+}
+
+footer ul li a:hover{
+  opacity: 0.6;
+  transition: ease-in-out;
+}
+
 .header ul{
     text-align: right;
+    align-items: right;
 }
 
 .header ul li{
@@ -125,7 +184,7 @@ span {
 
 .pic1{
     position: absolute;
-    top: 20%;
+    top: 17%;
     right: 6%;
     width: auto;
 }
@@ -147,10 +206,24 @@ span {
     border: none;
     padding: 2%;
     position: absolute;
-    top: 115%;
-    left: 20%;
+    top: 130%;
+    left: 25%;
     
    
+}
+
+.us h1{
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2px;
+    font-size: 42px;
+
+    color: #303031;
+    border: none;
+    padding: 2%;
+    position: absolute;
+    top: 210%;
+    left: 42%;
+    
 }
 
 
@@ -166,7 +239,7 @@ span {
     padding: 2%;
     width: 90%;
     position: absolute;
-    top: 135%;
+    top: 145%;
     left: 3%;
 }
 
@@ -236,50 +309,102 @@ span {
     top: 175%;
     left: 40%;
     
+
 }
 
 .flex-container {
     display: flex;
     position: absolute;
-    top: 210%;
-    left: 2%;
+    top: 233%;
+    left: 2.5%;
     background-color: transparent;
+    
+
   }
   
   .flex-container > div {
       display: flex;
+      flex-direction: column;
     color: #f1f1f1;
     background-color: #f1f1f1;
     margin: 1%;
     padding: 0px;
     font-size: 30px;
-    justify-content: space-evenly;
-  }
-
-  .authentic{
-      position: absolute;
-  }
-
-  .authenticity{
-    font-family: 'Carter One', cursive;
-    letter-spacing: 2px;
-    font-size: 42px;
-    position: absolute;
-    color: #303031;
-    border: none;
-    padding: 2%;
-    position: absolute;
-    top: 275%;
-    transform: translateX(-50%);
-  }
-
-  .reviews{
     
-        display: flex;
-        background-color: transparent;
-      }
+  }
 
- .reviews h1{
+  #authentic{
+    position: absolute;
+    background-color: #f8d6db;
+    top: 300%;
+  }
+
+
+
+
+#reviews{
+
+  font-size: 22px;
+  text-align: left;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 100;
+  position: absolute;
+  color: #303031;
+  display: flex;
+  position: absolute;
+  /* top: 20%;
+  left: 10%; */
+  background-color: transparent;
+  border: none;
+  /* padding: 2%;
+  margin: 2%; */
+  width: 80%;
+}
+
+
+
+.reviewsimage{
+
+top: -29%;
+left: 0%;
+position: absolute;
+
+top: 100%;
+right: 0%;
+}
+
+.reviewshead{
+  font-family: 'Carter One', cursive;
+  letter-spacing: 2px;
+  font-weight:600 ;
+  text-align: left;
+  line-height: 30px;
+  font-size: 20px;
+  color: #303031;
+position: absolute;
+width: 69.7%;
+top: 20%;
+left: 60%;
+}
+
+
+.reviewstext{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:600 ;
+  letter-spacing: 2px;
+  text-align: left;
+  line-height: 30px;
+  font-size: 20px;
+  color: #303031;
+position: absolute;
+width: 69.7%;
+top: 40%;
+right: 0%;
+
+}
+
+ /* .reviews h1{
 
       display: flex;
       font-family: 'Carter One', cursive;
@@ -288,31 +413,17 @@ span {
       position: absolute;
       color: #303031;
       background-color: transparent;
-      top:880%;
+      top:100%;
       left: 150%;
       margin: 1%;
       padding: 0px;
       font-size: 30px;
       justify-content: space-evenly;
   
- }
+ } */
 
-.authenticity{
-    display: flex;
-    font-family: 'Carter One', cursive;
-    letter-spacing: 2px;
-    font-size: 42px;
-    position: absolute;
-    color: #303031;
-    background-color: transparent;
-    top: 480%;
-    margin: 1%;
-    padding: 0px;
-    font-size: 30px;
-    justify-content: space-evenly;
-}
 
-.reviewstext
+/* .reviewstext
     {
         font-family: 'Montserrat', sans-serif;
         font-weight:600 ;
@@ -327,7 +438,36 @@ span {
         position: absolute;
         top: 835%;
         left: 3%;
-    }
+    } */
+
+ .authenticity{
+  font-family: 'Carter One', cursive;
+  letter-spacing: 2px;
+  font-size: 42px;
+  position: absolute;
+  color: #303031;
+  border: none;
+  padding: 2%;
+  position: absolute;
+  
+  
+}
+
+.authenticity{
+    display: flex;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 2px;
+    font-size: 42px;
+    position: absolute;
+    color: #303031;
+    
+    background-color: transparent;
+    top:5%;
+    margin: 1%;
+    padding: 0px;
+    font-size: 30px;
+    justify-content: space-evenly;
+}
 
 .pink{
     color: #f26a7e;
@@ -436,4 +576,231 @@ form {
     .cancelbtn {
       width: 100%;
     }
+
   }
+
+.signinart{
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+
+
+ 
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  border: none;
+  outline: none;
+}
+
+hr {
+  border: none;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #f26a7e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container2 {
+  padding: 16px;
+  border: none;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+#landingpage{
+  background-color: #f8d6db;
+}
+
+
+/* #aboutus1{
+  position: absolute;
+  width: 100%;
+  top: 0%; 
+
+} */
+
+.aboutimage{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.abouttext{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:400 ;
+  letter-spacing: 2px;
+  text-align: left;
+  line-height: 45px;
+  font-size: 40px;
+  color: #303031;
+  border: none;
+  padding: 2%;
+  width: 50%;
+  position: absolute;
+  top: 39%;
+  right: 5%;
+}
+
+#aboutus2{
+
+  position: absolute;
+  width: 100%;
+  top: 100%;
+
+}
+
+.team{
+  position: absolute;
+  
+  top: 5%;
+  font-family: 'Carter One', cursive;
+  letter-spacing: 2px;
+  font-size: 42px;
+  position: absolute;
+  color: #303031;
+  border: none;
+  padding: 2%;
+}
+
+.blue{
+  color: #71a894;
+}
+
+.ted{
+background-color: antiquewhite;
+position: absolute;
+text-align: center;
+width: 30%;
+top: 28%;
+left: 17%;
+
+font-family: 'Montserrat', sans-serif;
+padding-left: 5%;
+padding-right: 5%;
+padding-bottom: 2%;
+font-weight:400 ;
+letter-spacing: 2px;
+text-align: center;
+align-items: center;
+line-height: 25px;
+font-size: 15px;
+color: #303031;
+border: none;
+
+}
+
+.ness{
+  background-color: antiquewhite;
+  position: absolute;
+  text-align: center;
+  width: 30%;
+  top: 28%;
+  right: 17%;
+
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  font-weight:400 ;
+  letter-spacing: 2px;
+  text-align: center;
+  align-items: center;
+  line-height: 25px;
+  font-size: 15px;
+  color: #303031;
+  border: none;
+}
+
+#aboutus3{
+  /* background-color: antiquewhite; */
+  position: absolute;
+  width: 100%;
+  top: 200%;
+  margin-bottom: 10%;
+
+}
+
+.intouch{
+  font-family: 'Carter One', cursive;
+  letter-spacing: 2px;
+  font-size: 42px;
+  position: absolute;
+  color: #303031;
+
+  top: 15%;
+
+}
+
+.intouchtext{
+  position: absolute;
+  top: 30%;
+
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight:200 ;
+  letter-spacing: 2px;
+  text-align: center;
+  align-items: center;
+  line-height: 35px;
+  font-size: 25px;
+  color: #303031;
+  border: none;
+  
+
+}
+
+.container3{
+  position: absolute;
+  top: 56%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* #aboutus4{
+  /* background-color: antiquewhite; */
+  /* position: absolute;
+  width: 100%;
+  top: 300%;
+
+} */ */
